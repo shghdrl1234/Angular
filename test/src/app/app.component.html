@@ -1,0 +1,16 @@
+<!-- 8. 아까 만들어 두었던 header.component를 여기서 사용 가능하다.
+      그러기 위해선 component의 selector을 적어준다.
+    하지만, 이렇게 하면 에러가 발생한다. app-header을 인식하지 못한다.
+    해결 방법은 app.module에 사용할 모든 기능을 등록해야 한다.
+    CLI를 통해 생성했다면, 자동으로 등록될 것이다. -->
+
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- 12. 생성한 component들의 selector를 적어준다.  -->
+      <app-recipes></app-recipes>
+      <app-shopping-list></app-shopping-list>
+    </div>
+  </div>
+</div>
